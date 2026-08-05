@@ -1,0 +1,31 @@
+<form>  
+    <fieldset>
+        <legend>Modalidad de estudio</legend>
+        <label>
+            <input type="radio" value="presencial"
+            name="modalidad">
+            Presencial
+        </label> 
+        <label>
+            <input type="radio" value="virtual"
+            name="modalidad">
+            Virtual
+        <br>    
+        </label>
+        <label for="turno"> Turno </label>
+        <select name="turno" id="turno">    
+            <option value="mañana">Turno A </option>
+            <option value="tarde">Turno B </option>
+            <option value="noche">Turno C </option>
+        </select>
+        <br>
+        <label for ="comentario"> Comentario: </label>
+        <textarea name="comentario" id="comentario"></textarea>
+
+        <br>
+        <button> vista previa </button>
+        <button type="button"> Cancelar</button>
+        <button type="reset"> LImpiar </button>
+        <button type="submit"> Enviar </button>
+    </fieldset>
+</form>
