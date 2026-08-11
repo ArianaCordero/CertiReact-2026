@@ -1,0 +1,9 @@
+body{background-color: #f91616;}
+
+.contenedor{
+    background-color: aquamarine;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border: 10px solid black;
+}
