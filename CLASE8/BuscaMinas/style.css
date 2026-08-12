@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.tablero {
+  border-collapse: collapse;
+}
+
+.tablero td {
+  width: 40px;
+  height: 40px;
+  border: 2px solid gray;
+  background-color: #ccc;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: transparent;
+  font-size: 20px;
+}
+
+.tablero td:hover {
+  background-color: #bbb;
+  color: initial;
+}
