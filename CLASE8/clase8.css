@@ -1,6 +1,17 @@
 .mensaje {
-    background-color: navy;
+    background-color: #1a26aa;
     color: white;
     padding: 10px;
     border-radius: 5px;
+    font-family: system-ui, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+    height: 100px;
+}
+
+
+.mensaje:hover {
+    background-color: #0d1566;
+    
 }
