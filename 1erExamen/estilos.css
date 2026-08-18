@@ -1,0 +1,80 @@
+.linea {
+    margin: 0;
+}
+
+h3 {
+    margin: 0 0 1rem 0;
+}
+
+.control-inicio {
+    display: none;
+}
+
+.boton-inicio {
+    padding: 0.5rem 0.5rem;
+    background-color: #145da0;
+    color: white;
+    border: 2px solid #0d3d6e;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+.boton-inicio:hover {
+    background-color: #0d3d6e;
+    padding-left: 1.5rem;
+}
+
+.pista {
+    position: relative;
+    width: 100%;
+    max-width: 40rem;
+    height: 20rem;
+    margin: 1.5rem 0 1rem 0;
+    border: 3px solid #145da0;
+    background-color: #dae4f1;
+    border-radius: 8px;
+}
+
+.carril {
+    position: relative;
+    height: 5rem;
+    border-bottom: 1px dashed #B8C2CC;
+    display: flex;
+    align-items: center;
+}
+
+.corredor {
+    position: relative;
+    left: 0;
+    font-size: 2.5rem;
+    transition: left 3s;
+}
+
+.meta {
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    height: 100%;
+    border-left: 4px dashed black;
+}
+
+.control-inicio:checked ~ .pista .corredor1 {
+    left: 85%;
+    transition: left 4s;
+}
+
+.control-inicio:checked ~ .pista .corredor2 {
+    left: 85%;
+    transition: left 2.2s;
+}
+
+.control-inicio:checked ~ .pista .corredor3 {
+    left: 85%;
+    transition: left 2.8s;
+}
+
+.control-inicio:checked ~ .pista .corredor4 {
+    left: 85%;
+    transition: left 2.5s;
+}
