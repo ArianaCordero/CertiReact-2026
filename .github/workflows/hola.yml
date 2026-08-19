@@ -1,9 +1,12 @@
-name: Hola Mundo 
+name: Hola Mundo
+
 on:
-workflow_dispatch:
+  workflow_dispatch:
+
 jobs:
-hola:
-run-on: ubuntu-latest
-steps:
--name: Saludar 
-run: echo "Hola Mundo"
+  hola:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Saludar
+        run: echo "Hola Mundo"
