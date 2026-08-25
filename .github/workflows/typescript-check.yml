@@ -1,0 +1,25 @@
+name: Validar TypeScript
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  typescript:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar Codigo
+        uses: actions/checkout@v4
+
+      - name: Instalar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Validar TypeScript
+        run: npx tsc --noEmit ./1erParcial/CLASE8/BuscaMinas/buscaminas.ts
