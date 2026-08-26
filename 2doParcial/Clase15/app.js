@@ -1,0 +1,10 @@
+"use strict";
+let intentos = 3;
+let mensaje = "Adivina el número entre 1 y 10";
+let activo = true;
+console.log(mensaje);
+console.log(intentos);
+console.log(activo);
+const numero = 5;
+console.log(numero == 5);
+console.log(numero === 5);
