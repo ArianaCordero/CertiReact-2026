@@ -1,0 +1,35 @@
+name: Build Tres en Raya
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./2doParcial/Clase17/tres-en-raya
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Descargar dependencias
+        run: npm ci
+
+      - name: Ejecutar Vite Build
+        run: npm run build
+
+      - name: Guardar aplicacion web
+        uses: actions/upload-artifact@v4
+        with:
+          name: aplication-web
+          path: ./2doParcial/Clase17/tres-en-raya/dist
