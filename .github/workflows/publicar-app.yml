@@ -14,6 +14,10 @@ jobs:
   publicar:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ./2doParcial/Clase19/contador
+
     steps:
       - name: Descargar código
         uses: actions/checkout@v4
@@ -30,7 +34,7 @@ jobs:
       - name: Subir dist
         uses: actions/upload-pages-artifact@v4
         with:
-          path: './dist'
+          path: './2doParcial/Clase19/contador/dist'
 
       - name: Publicar
         uses: actions/deploy-pages@v4
