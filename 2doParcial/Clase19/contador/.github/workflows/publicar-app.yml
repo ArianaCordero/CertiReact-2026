@@ -1,0 +1,23 @@
+name: Publicar la app
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Construir aplicación
+        run: npm run build
+
+      - name: Configurar Github Pages
+        uses: actions/configure-pages@v5
